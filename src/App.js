@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Video from './Video';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app__videos'>
+    <Video 
+    url={'/images/1.webm'}
+    channels='ssnghaagg'
+    description='This is description'
+    song='This is the song'
+    likes={122}
+    shares={23}
+    messages={13}/>
+
+<Video 
+    url={'/images/1.webm'}
+    channels='ssnghaagg'
+    description='This is description'
+    song='This is the song'
+    likes={232}
+    shares={21}
+    messages={8}/>
+    
+    </div>
     </div>
   );
 }
